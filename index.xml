@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shawn的博客</title>
-    <link>http://localhost:1313/</link>
+    <link>https://ztianya.github.io/</link>
     <description>Recent content on Shawn的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 16 Dec 2019 21:42:31 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ztianya.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>走进Ext4文件系统</title>
-      <link>http://localhost:1313/post/ext4_1/</link>
+      <link>https://ztianya.github.io/post/ext4_1/</link>
       <pubDate>Mon, 16 Dec 2019 21:42:31 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/ext4_1/</guid>
+      <guid>https://ztianya.github.io/post/ext4_1/</guid>
       <description>最近开始研究Ext4文件系统，在此记录相关笔记，从Ext4的结构开始，走进文件系统的世界。 Ext4文件系统结构 Ext4文件系统的最小存储单元</description>
     </item>
     
