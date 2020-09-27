@@ -25,7 +25,7 @@
   "@type": "BlogPosting",
   "headline": "分区格式探讨",
   "url": "https:\/\/ztianya.github.io\/post\/partition\/",
-  "wordCount": "1226",
+  "wordCount": "1230",
   "datePublished": "2020-09-26T20:13:53+08:00",
   "dateModified": "2020-09-26T20:13:53+08:00",
   "author": {
@@ -139,6 +139,11 @@ cat /root/partition_entry | print_gpt_partition_entry_array
 </code></pre></div><p>如果把GPT磁盘第一个扇区的512字节破坏了，会有什么影响？破坏Protective mbr会影响系统内分区的识别，但由于Protective mbr并没有什么实质性的用途，内容也比较固定，所以容易恢复，直接dd写入固定的Protective mbr内容即可。</p>
 <p>如何设置磁盘格式？
 可以通过parted工具mklabel设置磁盘格式，除了gpt类型外，msdos表示Legacy mbr格式的硬盘类型。mklabel虽然不会删除数据，但会把分区表都清空掉。如果要恢复分区表，可以通过parted的rescue功能，rescue扫描磁盘中的内容，尝试识别其中的文件系统，从而判断是否存在分区。</p>
+<h2 id="heading1">参考</h2>
+<ul>
+<li><a href="https://metebalci.com/blog/a-quick-tour-of-guid-partition-table-gpt/">https://metebalci.com/blog/a-quick-tour-of-guid-partition-table-gpt/</a></li>
+<li><a href="https://www.uefi.org/sites/default/files/resources/UEFI_Spec_2_7.pdf">https://www.uefi.org/sites/default/files/resources/UEFI_Spec_2_7.pdf</a></li>
+</ul>
 
 
   
